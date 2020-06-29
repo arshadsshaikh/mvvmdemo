@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/userImageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher"
+        app:riv_corner_radius="100dp"
+        app:riv_border_width="3dp"
+        app:riv_border_color="#171717"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="10 min" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@+id/userImageView"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="20sp"
+        android:text="10 min"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/userDesignationTextView"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@+id/userImageView"
+        android:layout_below="@+id/userNameTextView"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:textSize="20sp"
+        android:text="10 min"
+        android:padding="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/articleImageView"
+        android:layout_below="@+id/userImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/articleContentTextView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/articleImageView"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="20sp"
+        android:text="10 min"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/articleTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/articleContentTextView"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="20sp"
+        android:text="10 min"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/articleUrlTextView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/articleTitleTextView"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="20sp"
+        android:text="10 min"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/commentsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/articleUrlTextView"
+        android:textStyle="bold"
+        android:text="10 min" />
+
+    <TextView
+        android:id="@+id/likesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/articleUrlTextView"
+        android:textStyle="bold"
+        android:text="10 min" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/background_dark"
+        android:layout_below="@+id/likesTextView"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+</RelativeLayout>
